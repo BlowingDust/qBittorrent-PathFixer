@@ -1,0 +1,30 @@
+schema_version = 1
+
+[qbittorrent]
+base_url = "http://qbittorrent.example.test:8080/"
+torrent_hash = "0123456789abcdef0123456789abcdef01234567"
+timeout_seconds = 15.0
+retry_network_errors = 2
+# username = "admin"
+# password_env = "QBIT_PASSWORD"
+
+[limits]
+filename_chars = 200
+filename_utf8_bytes = 220
+directory_chars = 200
+directory_utf8_bytes = 220
+relative_path_chars = 1000
+relative_path_utf8_bytes = 3800
+windows_absolute_path_chars = 240
+
+[windows]
+destination_root = "D:/Downloads/TargetTorrent"
+case_sensitive = false
+
+[output]
+root = "work"
+
+[execution]
+poll_interval_seconds = 1.0
+operation_timeout_seconds = 60.0
+settle_delay_seconds = 0.5
